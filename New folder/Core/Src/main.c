@@ -140,6 +140,11 @@ int main(void)
 		}
 		B1State[1] = B1State[0];
 
+//		IOExpenderWritePinB(IOExpdrDataWrite);
+
+
+
+
 //		IOExpenderReadPinA(&IOExpdrDataReadBack);
 //		IOExpenderWritePinB(IOExpdrDataWrite);
 
@@ -341,6 +346,15 @@ void IOExpenderWritePinB(uint8_t Wdata) {
 		IOExpdrExampleWriteFlag=0;
 	}
 }
+
+//void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+//	if (GPIO_Pin == GPIO_PIN_13)	// if pin 13 or blue button pressed
+//	{
+//		TogglePin++;
+//		IOExpdrDataWrite = IOExpdrDataReadBack;
+//		IOExpdrExampleWriteFlag = 1;
+//	}
+//}
 /* USER CODE END 4 */
 
 /**
